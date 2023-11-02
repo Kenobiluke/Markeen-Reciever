@@ -62,6 +62,7 @@ radio.onReceivedNumber(function (receivedNumber) {
                 `)
         }
     }
+    maqueen.motorStop(maqueen.Motors.All)
 })
 input.onButtonPressed(Button.A, function () {
     Radiochannel += 1
@@ -80,7 +81,7 @@ input.onButtonPressed(Button.B, function () {
 let Radiochannel = 0
 let Lighttrack = 0
 let _200 = 0
-_200 = 200
+_200 = 254
 Lighttrack = 0
 basic.forever(function () {
     radio.setGroup(Radiochannel)
